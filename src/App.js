@@ -21,7 +21,7 @@ function App() {
         var duration = journey['duration']
         var leg = legs[0]['departureTime']
 
-        output.push(["Leaving at: ", leg.split("T")[1], " -- with a duration of ", duration, " minutes."])
+        output.push(["Leaving at: ", leg.split("T")[1].substring(0, leg.split("T")[1].length - 3), " -- with a duration of ", duration, " minutes."])
         output.push("\n")
         output.push("\n")
     }
