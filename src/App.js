@@ -15,6 +15,7 @@ function App() {
 
   let getJourneyData = (json) => {
     var output = ["\n"]
+    
     for (let i = 0 ; i < json['journeys'].length; ++i) {
         var journey = json['journeys'][i]
         var legs = journey['legs']
