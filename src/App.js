@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import { Card } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { Navbar, Container } from 'react-bootstrap';
+import BrandNavbar from './BrandNavbar';
 
 const TFL_API_OUTBOUND_JOURNEY_ENDPOINT = "https://api.tfl.gov.uk/journey/journeyresults/1000257/to/1000080"
 const TFL_API_INBOUND_JOURNEY_ENDPOINT = "https://api.tfl.gov.uk/journey/journeyresults/1000080/to/1000257"
@@ -49,20 +49,8 @@ function App() {
   
   return (
     <>
-    <div>
-    <Navbar variant="dark" bg="dark">
-        <Container>
-            <Navbar.Brand>TFL Planner</Navbar.Brand>
-            <Navbar.Collapse className="NavbarText">
-                <Navbar.Text>
-                    by Horia Pavel
-                </Navbar.Text>
-            </Navbar.Collapse>
-        </Container>
-    </Navbar>
-    </div>
+    <BrandNavbar/>
     <div className="App">
-        {/* <Navbar/> */}
     <div className="Cards">
         <Card className="Card">
             <Card.Body>
